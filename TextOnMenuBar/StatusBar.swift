@@ -10,7 +10,9 @@ class StatusBar: NSObject {
     private var bar: NSStatusBar
     private var statusItem: NSStatusItem
     private var menu: NSMenu
+    
     private var textInputWindowController: TextInputWindowController?
+    private var settingsWindowController: SettingsWindowController?
     
     override init() {
         bar = NSStatusBar.system
@@ -38,10 +40,14 @@ class StatusBar: NSObject {
         let titleItem = NSMenuItem(title: "Set the Text", action: #selector(changeTextAction), keyEquivalent: "")
         titleItem.target = self
         
+        let settingsItem = NSMenuItem(title: "Settings", action: #selector(showSettings), keyEquivalent: "")
+        settingsItem.target = self
+        
         let quitItem = NSMenuItem(title: "Quit", action: #selector(quitAction), keyEquivalent: "")
         quitItem.target = self
         
         menu.addItem(titleItem)
+        menu.addItem(settingsItem)
         menu.addItem(.separator())
         menu.addItem(quitItem)
         
@@ -57,6 +63,14 @@ class StatusBar: NSObject {
         }
         
         textInputWindowController?.show()
+    }
+    
+    @objc private func showSettings() {
+        if settingsWindowController == nil {
+            settingsWindowController = SettingsWindowController()
+        }
+        
+        settingsWindowController?.show()
     }
     
     @objc private func quitAction() {

@@ -16,6 +16,8 @@
 		90AA91952C22489300A6A3BD /* TextOnMenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA918C2C22489300A6A3BD /* TextOnMenuBarApp.swift */; };
 		90AA91962C22489300A6A3BD /* TextInputWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA918D2C22489300A6A3BD /* TextInputWindowController.swift */; };
 		90AA919A2C224A9D00A6A3BD /* NSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AA91992C224A9D00A6A3BD /* NSLabel.swift */; };
+		90C30FB12C286AA0007406A1 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C30FB02C286AA0007406A1 /* SettingsWindowController.swift */; };
+		90C30FB32C286BDF007406A1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C30FB22C286BDF007406A1 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		90AA918C2C22489300A6A3BD /* TextOnMenuBarApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextOnMenuBarApp.swift; sourceTree = "<group>"; };
 		90AA918D2C22489300A6A3BD /* TextInputWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputWindowController.swift; sourceTree = "<group>"; };
 		90AA91992C224A9D00A6A3BD /* NSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLabel.swift; sourceTree = "<group>"; };
+		90C30FB02C286AA0007406A1 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		90C30FB22C286BDF007406A1 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				90AA918C2C22489300A6A3BD /* TextOnMenuBarApp.swift */,
 				90AA918D2C22489300A6A3BD /* TextInputWindowController.swift */,
 				90AA91992C224A9D00A6A3BD /* NSLabel.swift */,
+				90C30FB02C286AA0007406A1 /* SettingsWindowController.swift */,
+				90C30FB22C286BDF007406A1 /* Storyboard.storyboard */,
 			);
 			path = TextOnMenuBar;
 			sourceTree = SOURCE_ROOT;
@@ -144,6 +150,7 @@
 			files = (
 				90AA918F2C22489300A6A3BD /* Preview Assets.xcassets in Resources */,
 				90AA91902C22489300A6A3BD /* Assets.xcassets in Resources */,
+				90C30FB32C286BDF007406A1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +167,7 @@
 				90AA91932C22489300A6A3BD /* SettingsView.swift in Sources */,
 				90AA91942C22489300A6A3BD /* StatusBar.swift in Sources */,
 				90AA91952C22489300A6A3BD /* TextOnMenuBarApp.swift in Sources */,
+				90C30FB12C286AA0007406A1 /* SettingsWindowController.swift in Sources */,
 				90AA91922C22489300A6A3BD /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
