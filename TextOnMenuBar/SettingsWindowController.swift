@@ -7,6 +7,9 @@ import AppKit
 import ServiceManagement
 
 class SettingsWindowController: NSWindowController {
+    
+    private var launchAtLogin: Bool = SMAppService.mainApp.status == .enabled
+    
     convenience init() {
         self.init(window: NSWindow(contentRect: NSRect(x: 0, y: 0, width: 300, height: 100), styleMask: [.titled, .closable], backing: .buffered, defer: false))
 //        self.init()
@@ -32,7 +35,7 @@ class SettingsWindowController: NSWindowController {
         let dockIconCheckbox = NSButton(checkboxWithTitle: "Hide the Dock Icon", target: self, action: #selector(dockIconCheckboxTapped(sender:)))
         dockIconCheckbox.translatesAutoresizingMaskIntoConstraints = false
         
-        let launchCheckbox = NSButton(checkboxWithTitle: "Launch on Login", target: self, action: #selector(launchCheckboxTapped(sender:)))
+        let launchCheckbox = NSButton(checkboxWithTitle: "Launch at Login", target: self, action: #selector(launchCheckboxTapped(sender:)))
         launchCheckbox.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(dockIconCheckbox)
@@ -47,28 +50,28 @@ class SettingsWindowController: NSWindowController {
         launchCheckbox.trailingAnchor.constraint(equalToSystemSpacingAfter: view.trailingAnchor, multiplier: 1.5).isActive = true
 //        launchCheckbox.bottomAnchor.constraint(equalToSystemSpacingBelow: view.bottomAnchor, multiplier: 1).isActive = true
         
-        let state = UserDefaults.standard.bool(forKey: "hideDockIcon")
-        if state {
-            dockIconCheckbox.state = .on
-        }
+        let isHiddenDockIcon = UserDefaults.standard.bool(forKey: "hideDockIcon")
+        (isHiddenDockIcon == true) ? (dockIconCheckbox.state = .on) : (dockIconCheckbox.state = .off)
+        
+        (launchAtLogin == true) ? (launchCheckbox.state = .on) : (launchCheckbox.state = .off)
     }
     
     @IBAction func dockIconCheckboxTapped(sender: NSButton) {
         UserDefaults.standard.set(sender.state, forKey: "hideDockIcon")
-
-//        if sender.state == .on {
-//            NSApp.setActivationPolicy(.accessory)
-//        } else {
-//            NSApp.setActivationPolicy(.regular)
-//        }
     }
     
     @IBAction func launchCheckboxTapped(sender: NSButton) {
-        if sender.state == .on {
-            
-        } else {
-            
+        do {
+            if sender.state == .on {
+                try SMAppService.mainApp.register()
+            } else {
+                try SMAppService.mainApp.unregister()
+            }
+        } catch {
+            logError(items: error.localizedDescription)
         }
+        
+        launchAtLogin = SMAppService.mainApp.status == .enabled
     }
 }
 
