@@ -4,6 +4,7 @@
 //
 
 import AppKit
+import ServiceManagement
 
 class SettingsWindowController: NSWindowController {
     convenience init() {
@@ -14,11 +15,15 @@ class SettingsWindowController: NSWindowController {
         self.window?.center()
         self.window?.title = "Settings"
         setupLayout()
+        
+        window?.delegate = self
     }
     
     func show() {
         NSApp.activate()
         self.window?.makeKeyAndOrderFront(nil)
+
+        NSApp.setActivationPolicy(.regular)
     }
     
     private func setupLayout() {
@@ -41,14 +46,21 @@ class SettingsWindowController: NSWindowController {
         launchCheckbox.topAnchor.constraint(equalToSystemSpacingBelow: dockIconCheckbox.bottomAnchor, multiplier: 1.5).isActive = true
         launchCheckbox.trailingAnchor.constraint(equalToSystemSpacingAfter: view.trailingAnchor, multiplier: 1.5).isActive = true
 //        launchCheckbox.bottomAnchor.constraint(equalToSystemSpacingBelow: view.bottomAnchor, multiplier: 1).isActive = true
+        
+        let state = UserDefaults.standard.bool(forKey: "hideDockIcon")
+        if state {
+            dockIconCheckbox.state = .on
+        }
     }
     
     @IBAction func dockIconCheckboxTapped(sender: NSButton) {
-        if sender.state == .on {
-            NSApp.setActivationPolicy(.accessory)
-        } else {
-            NSApp.setActivationPolicy(.regular)
-        }
+        UserDefaults.standard.set(sender.state, forKey: "hideDockIcon")
+
+//        if sender.state == .on {
+//            NSApp.setActivationPolicy(.accessory)
+//        } else {
+//            NSApp.setActivationPolicy(.regular)
+//        }
     }
     
     @IBAction func launchCheckboxTapped(sender: NSButton) {
@@ -56,6 +68,15 @@ class SettingsWindowController: NSWindowController {
             
         } else {
             
+        }
+    }
+}
+
+extension SettingsWindowController: NSWindowDelegate {
+    func windowWillClose(_ notification: Notification) {
+        let state = UserDefaults.standard.bool(forKey: "hideDockIcon")
+        if state {
+            NSApp.setActivationPolicy(.accessory)
         }
     }
 }
