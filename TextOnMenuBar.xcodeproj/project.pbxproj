@@ -17,6 +17,7 @@
 		902203B92C3A772E00D34BDF /* TextInputWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203B52C3A772E00D34BDF /* TextInputWindowController.swift */; };
 		902203BB2C3A787D00D34BDF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203BA2C3A787D00D34BDF /* Logger.swift */; };
 		902203C12C3A7C9000D34BDF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203C02C3A7C9000D34BDF /* main.swift */; };
+		902203C32C3A8C4000D34BDF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203C22C3A8C4000D34BDF /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		902203B52C3A772E00D34BDF /* TextInputWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputWindowController.swift; sourceTree = "<group>"; };
 		902203BA2C3A787D00D34BDF /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		902203C02C3A7C9000D34BDF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		902203C22C3A8C4000D34BDF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				902203B52C3A772E00D34BDF /* TextInputWindowController.swift */,
 				902203BA2C3A787D00D34BDF /* Logger.swift */,
 				902203C02C3A7C9000D34BDF /* main.swift */,
+				902203C22C3A8C4000D34BDF /* SettingsViewController.swift */,
 			);
 			path = TextOnMenuBar;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				902203BB2C3A787D00D34BDF /* Logger.swift in Sources */,
 				902203B62C3A772E00D34BDF /* SettingsWindowController.swift in Sources */,
 				902203A42C3A751A00D34BDF /* AppDelegate.swift in Sources */,
+				902203C32C3A8C4000D34BDF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
