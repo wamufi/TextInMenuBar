@@ -12,9 +12,7 @@ class SettingsWindowController: NSWindowController {
     
     convenience init() {
         self.init(window: NSWindow(contentRect: NSRect(x: 0, y: 0, width: 300, height: 100), styleMask: [.titled, .closable], backing: .buffered, defer: false))
-//        self.init()
-//        self.window?.styleMask = [.titled, .closable]
-//        self.window?.backingType = .buffered
+
         self.window?.center()
         self.window?.title = "Settings"
         setupLayout()

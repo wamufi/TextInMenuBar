@@ -4,10 +4,9 @@
 //
 
 import AppKit
-import SwiftUI
 
 class StatusBar: NSObject {
-    private var bar: NSStatusBar
+    
     private var statusItem: NSStatusItem
     private var menu: NSMenu
     
@@ -15,8 +14,7 @@ class StatusBar: NSObject {
     private var settingsWindowController: SettingsWindowController?
     
     override init() {
-        bar = NSStatusBar.system
-        statusItem = bar.statusItem(withLength: NSStatusItem.variableLength)
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         menu = NSMenu(title: "Settings")
 
         super.init()
