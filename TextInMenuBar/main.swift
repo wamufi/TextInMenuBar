@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import AppKit

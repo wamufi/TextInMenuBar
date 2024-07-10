@@ -1,6 +1,6 @@
 //
 //  Logger.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import Foundation

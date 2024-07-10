@@ -1,6 +1,6 @@
 //
 //  NSLabel.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import AppKit

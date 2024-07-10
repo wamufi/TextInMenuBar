@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import AppKit

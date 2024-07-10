@@ -1,6 +1,6 @@
 //
 //  StatusBar.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import AppKit

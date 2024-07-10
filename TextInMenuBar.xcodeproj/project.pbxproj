@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		902203A02C3A751A00D34BDF /* TextOnMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextOnMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		902203A02C3A751A00D34BDF /* TextInMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextInMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		902203A32C3A751A00D34BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		902203A52C3A751A00D34BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		902203A72C3A751D00D34BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		902203972C3A751A00D34BDF = {
 			isa = PBXGroup;
 			children = (
-				902203A22C3A751A00D34BDF /* TextOnMenuBar */,
+				902203A22C3A751A00D34BDF /* TextInMenuBar */,
 				902203A12C3A751A00D34BDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		902203A12C3A751A00D34BDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				902203A02C3A751A00D34BDF /* TextOnMenuBar.app */,
+				902203A02C3A751A00D34BDF /* TextInMenuBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		902203A22C3A751A00D34BDF /* TextOnMenuBar */ = {
+		902203A22C3A751A00D34BDF /* TextInMenuBar */ = {
 			isa = PBXGroup;
 			children = (
 				902203A32C3A751A00D34BDF /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				902203C02C3A7C9000D34BDF /* main.swift */,
 				902203C22C3A8C4000D34BDF /* SettingsViewController.swift */,
 			);
-			path = TextOnMenuBar;
+			path = TextInMenuBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9022039F2C3A751A00D34BDF /* TextOnMenuBar */ = {
+		9022039F2C3A751A00D34BDF /* TextInMenuBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 902203AF2C3A751D00D34BDF /* Build configuration list for PBXNativeTarget "TextOnMenuBar" */;
+			buildConfigurationList = 902203AF2C3A751D00D34BDF /* Build configuration list for PBXNativeTarget "TextInMenuBar" */;
 			buildPhases = (
 				9022039C2C3A751A00D34BDF /* Sources */,
 				9022039D2C3A751A00D34BDF /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = TextOnMenuBar;
+			name = TextInMenuBar;
 			productName = TextOnMenuBar;
-			productReference = 902203A02C3A751A00D34BDF /* TextOnMenuBar.app */;
+			productReference = 902203A02C3A751A00D34BDF /* TextInMenuBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9022039B2C3A751A00D34BDF /* Build configuration list for PBXProject "TextOnMenuBar" */;
+			buildConfigurationList = 9022039B2C3A751A00D34BDF /* Build configuration list for PBXProject "TextInMenuBar" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9022039F2C3A751A00D34BDF /* TextOnMenuBar */,
+				9022039F2C3A751A00D34BDF /* TextInMenuBar */,
 			);
 		};
 /* End PBXProject section */
@@ -306,7 +306,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wamufi.TextOnMenuBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wamufi.TextInMenuBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -331,7 +331,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wamufi.TextOnMenuBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wamufi.TextInMenuBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9022039B2C3A751A00D34BDF /* Build configuration list for PBXProject "TextOnMenuBar" */ = {
+		9022039B2C3A751A00D34BDF /* Build configuration list for PBXProject "TextInMenuBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				902203AD2C3A751D00D34BDF /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		902203AF2C3A751D00D34BDF /* Build configuration list for PBXNativeTarget "TextOnMenuBar" */ = {
+		902203AF2C3A751D00D34BDF /* Build configuration list for PBXNativeTarget "TextInMenuBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				902203B02C3A751D00D34BDF /* Debug */,

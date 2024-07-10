@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/genchin/Development/Personal/macOS/TextOnMenuBar/TextInMenuBar.xcodeproj">
    </FileRef>
 </Workspace>

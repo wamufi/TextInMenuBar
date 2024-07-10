@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import Cocoa

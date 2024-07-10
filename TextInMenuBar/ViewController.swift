@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TextOnMenuBar
+//  TextInMenuBar
 //
 
 import Cocoa
