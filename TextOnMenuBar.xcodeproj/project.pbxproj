@@ -11,10 +11,8 @@
 		902203A62C3A751A00D34BDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203A52C3A751A00D34BDF /* ViewController.swift */; };
 		902203A82C3A751D00D34BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902203A72C3A751D00D34BDF /* Assets.xcassets */; };
 		902203AB2C3A751D00D34BDF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 902203AA2C3A751D00D34BDF /* Base */; };
-		902203B62C3A772E00D34BDF /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203B22C3A772E00D34BDF /* SettingsWindowController.swift */; };
 		902203B72C3A772E00D34BDF /* NSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203B32C3A772E00D34BDF /* NSLabel.swift */; };
 		902203B82C3A772E00D34BDF /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203B42C3A772E00D34BDF /* StatusBar.swift */; };
-		902203B92C3A772E00D34BDF /* TextInputWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203B52C3A772E00D34BDF /* TextInputWindowController.swift */; };
 		902203BB2C3A787D00D34BDF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203BA2C3A787D00D34BDF /* Logger.swift */; };
 		902203C12C3A7C9000D34BDF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203C02C3A7C9000D34BDF /* main.swift */; };
 		902203C32C3A8C4000D34BDF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902203C22C3A8C4000D34BDF /* SettingsViewController.swift */; };
@@ -27,10 +25,8 @@
 		902203A72C3A751D00D34BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		902203AA2C3A751D00D34BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		902203AC2C3A751D00D34BDF /* TextOnMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextOnMenuBar.entitlements; sourceTree = "<group>"; };
-		902203B22C3A772E00D34BDF /* SettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
 		902203B32C3A772E00D34BDF /* NSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLabel.swift; sourceTree = "<group>"; };
 		902203B42C3A772E00D34BDF /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
-		902203B52C3A772E00D34BDF /* TextInputWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputWindowController.swift; sourceTree = "<group>"; };
 		902203BA2C3A787D00D34BDF /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		902203C02C3A7C9000D34BDF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		902203C22C3A8C4000D34BDF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -72,9 +68,7 @@
 				902203A92C3A751D00D34BDF /* Main.storyboard */,
 				902203AC2C3A751D00D34BDF /* TextOnMenuBar.entitlements */,
 				902203B32C3A772E00D34BDF /* NSLabel.swift */,
-				902203B22C3A772E00D34BDF /* SettingsWindowController.swift */,
 				902203B42C3A772E00D34BDF /* StatusBar.swift */,
-				902203B52C3A772E00D34BDF /* TextInputWindowController.swift */,
 				902203BA2C3A787D00D34BDF /* Logger.swift */,
 				902203C02C3A7C9000D34BDF /* main.swift */,
 				902203C22C3A8C4000D34BDF /* SettingsViewController.swift */,
@@ -156,9 +150,7 @@
 				902203A62C3A751A00D34BDF /* ViewController.swift in Sources */,
 				902203C12C3A7C9000D34BDF /* main.swift in Sources */,
 				902203B72C3A772E00D34BDF /* NSLabel.swift in Sources */,
-				902203B92C3A772E00D34BDF /* TextInputWindowController.swift in Sources */,
 				902203BB2C3A787D00D34BDF /* Logger.swift in Sources */,
-				902203B62C3A772E00D34BDF /* SettingsWindowController.swift in Sources */,
 				902203A42C3A751A00D34BDF /* AppDelegate.swift in Sources */,
 				902203C32C3A8C4000D34BDF /* SettingsViewController.swift in Sources */,
 			);
