@@ -24,7 +24,7 @@
 		902203A52C3A751A00D34BDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		902203A72C3A751D00D34BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		902203AA2C3A751D00D34BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		902203AC2C3A751D00D34BDF /* TextOnMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextOnMenuBar.entitlements; sourceTree = "<group>"; };
+		902203AC2C3A751D00D34BDF /* TextInMenuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextInMenuBar.entitlements; sourceTree = "<group>"; };
 		902203B32C3A772E00D34BDF /* NSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLabel.swift; sourceTree = "<group>"; };
 		902203B42C3A772E00D34BDF /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		902203BA2C3A787D00D34BDF /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				902203A52C3A751A00D34BDF /* ViewController.swift */,
 				902203A72C3A751D00D34BDF /* Assets.xcassets */,
 				902203A92C3A751D00D34BDF /* Main.storyboard */,
-				902203AC2C3A751D00D34BDF /* TextOnMenuBar.entitlements */,
+				902203AC2C3A751D00D34BDF /* TextInMenuBar.entitlements */,
 				902203B32C3A772E00D34BDF /* NSLabel.swift */,
 				902203B42C3A772E00D34BDF /* StatusBar.swift */,
 				902203BA2C3A787D00D34BDF /* Logger.swift */,
@@ -293,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TextOnMenuBar/TextOnMenuBar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TextInMenuBar/TextInMenuBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -318,7 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TextOnMenuBar/TextOnMenuBar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TextInMenuBar/TextInMenuBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
