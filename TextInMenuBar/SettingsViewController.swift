@@ -24,11 +24,7 @@ class SettingsViewController: NSViewController {
     }
     
     private func setupLayout() {
-        let label = NSLabel()
-        label.stringValue = "Please input text:"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        textField.placeholderString = UserDefaults.standard.string(forKey: "setText") ?? "Hello, World!"
+        textField.placeholderString = "Please input text"
         textField.translatesAutoresizingMaskIntoConstraints = false
         
         let okButton = NSButton(title: "OK", target: self, action: #selector(okAction))
@@ -41,28 +37,26 @@ class SettingsViewController: NSViewController {
         let quitButton = NSButton(title: "Quit", target: self, action: #selector(quitAction))
         quitButton.translatesAutoresizingMaskIntoConstraints = false
         
-        view.addSubview(label)
         view.addSubview(textField)
         view.addSubview(okButton)
         view.addSubview(launchCheckbox)
         view.addSubview(quitButton)
         
-        let views = ["textField": textField, "ok": okButton, "label": label, "launch": launchCheckbox, "quit": quitButton]
-        let format0 = "H:|-18-[label]-18-|"
+        let views = ["textField": textField, "ok": okButton, "launch": launchCheckbox, "quit": quitButton]
         let format1 = "H:|-18-[textField]-16-[ok]-18-|"
         let format2 = "H:|-18-[launch]-16-[quit]-18-|"
-        let format3 = "V:|-18-[label]-12-[ok]-18-[launch]-18-|"
-        let format4 = "V:|-18-[label]-12-[textField]-18-[launch]-18-|"
-        let format5 = "V:|-18-[label]-12-[textField]-18-[quit]-18-|"
+        let format3 = "V:|-18-[ok]-18-[launch]-18-|"
+        let format4 = "V:|-18-[textField]-16-[launch]-18-|"
+        let format5 = "V:|-18-[textField]-16-[quit]-18-|"
         
-        var constraints = NSLayoutConstraint.constraints(withVisualFormat: format0, metrics: nil, views: views)
-        constraints += NSLayoutConstraint.constraints(withVisualFormat: format1, metrics: nil, views: views)
+        var constraints = NSLayoutConstraint.constraints(withVisualFormat: format1, metrics: nil, views: views)
         constraints += NSLayoutConstraint.constraints(withVisualFormat: format2, metrics: nil, views: views)
         constraints += NSLayoutConstraint.constraints(withVisualFormat: format3, metrics: nil, views: views)
         constraints += NSLayoutConstraint.constraints(withVisualFormat: format4, metrics: nil, views: views)
         constraints += NSLayoutConstraint.constraints(withVisualFormat: format5, metrics: nil, views: views)
 
         okButton.widthAnchor.constraint(equalToConstant: 70).isActive = true
+        quitButton.widthAnchor.constraint(equalToConstant: 70).isActive = true
 
         view.addConstraints(constraints)
     }
