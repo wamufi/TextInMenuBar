@@ -48,7 +48,7 @@ class StatusBar: NSObject {
             if popover.isShown {
                 popover.performClose(nil)
             } else {
-                popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+                popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
             }
         }
     }
