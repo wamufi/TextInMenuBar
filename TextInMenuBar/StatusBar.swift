@@ -35,6 +35,7 @@ class StatusBar: NSObject {
         let settingsViewController = SettingsViewController()
         settingsViewController.onSave = { [weak self] text in
             self?.updateStatusItem(text: text)
+            self?.popover.performClose(nil)
         }
         
         popover = NSPopover()

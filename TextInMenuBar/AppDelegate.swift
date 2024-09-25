@@ -9,7 +9,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusBar: StatusBar?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        logDebug(items: "finishLaunching: \(notification)")
         statusBar = StatusBar()
     }
     

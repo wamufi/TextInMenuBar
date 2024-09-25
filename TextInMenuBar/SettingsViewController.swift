@@ -9,8 +9,8 @@ import ServiceManagement
 class SettingsViewController: NSViewController {
     
     private var launchAtLogin: Bool = SMAppService.mainApp.status == .enabled
-    
     private var textField = NSTextField()
+    
     var onSave: ((String) -> Void)?
 
     override func viewDidLoad() {
@@ -33,6 +33,7 @@ class SettingsViewController: NSViewController {
         
         let launchCheckbox = NSButton(checkboxWithTitle: "Launch at Login", target: self, action: #selector(launchCheckboxTapped(sender:)))
         launchCheckbox.translatesAutoresizingMaskIntoConstraints = false
+        launchCheckbox.state = launchAtLogin ? .on : .off
         
         let quitButton = NSButton(title: "Quit", target: self, action: #selector(quitAction))
         quitButton.translatesAutoresizingMaskIntoConstraints = false
@@ -66,6 +67,7 @@ class SettingsViewController: NSViewController {
         if !text.isEmpty {
             UserDefaults.standard.set(text, forKey: "setText")
             onSave?(text)
+            textField.stringValue = ""
         }
     }
     
